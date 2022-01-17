@@ -5,6 +5,10 @@ class QuizEnd  extends React.Component {
         super(props);
         
     }
+    handleResetClick()
+    {
+        this.props.resetClickHandler()
+    }
     render() {
       return (
        
@@ -12,7 +16,7 @@ class QuizEnd  extends React.Component {
              
         <div>
         <p>Thanks for playing!</p>
-        <a href=''>Reset Quiz</a>
+        <a onClick = {this.handleResetClick.bind(this)}>Reset Quiz</a>
       </div>
            
         
