@@ -9,7 +9,7 @@ class QuizQuestion extends React.Component {
             quiz_position : 1
         }
     }
-    handleClick =(buttonText)=>{
+    handleClick (buttonText){
        if(buttonText == this.props.quiz_question.answer )
        {
         this.props.showNextQuestionHandler();

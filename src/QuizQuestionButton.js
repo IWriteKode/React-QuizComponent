@@ -8,7 +8,7 @@ class QuizQuestionButton  extends React.Component {
             quiz_position : 1
         }
     }
-    handleClick = () =>  {
+    handleClick()  {
         this.props.clickHandler(this.props.button_text);
 
     }
